@@ -1,0 +1,154 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.fachryar.moviecatalogue"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:6:5-67
+11-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:6:22-64
+12
+13    <permission
+13-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:8:5-10:44
+14        android:name="com.fachryar.moviecatalogue.READ_DATABASE"
+14-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:9:9-65
+15        android:protectionLevel="normal" />
+15-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:10:9-41
+16    <permission
+16-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:11:5-13:44
+17        android:name="com.fachryar.moviecatalogue.WRITE_DATABASE"
+17-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:12:9-66
+18        android:protectionLevel="normal" />
+18-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:13:9-41
+19
+20    <application
+20-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:15:5-64:19
+21        android:allowBackup="true"
+21-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:16:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\1a9aaae933d5861cc30a6c0a2bb8f8a0\core-1.1.0\AndroidManifest.xml:24:18-86
+23        android:debuggable="true"
+24        android:icon="@mipmap/ic_launcher"
+24-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:17:9-43
+25        android:label="@string/app_name"
+25-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:18:9-41
+26        android:roundIcon="@mipmap/ic_launcher_round"
+26-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:19:9-54
+27        android:supportsRtl="true"
+27-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:20:9-35
+28        android:testOnly="true"
+29        android:theme="@style/AppTheme" >
+29-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:21:9-40
+30        <provider
+30-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:24:9-28:39
+31            android:name="com.fachryar.moviecatalogue.provider.FavoriteProvider"
+31-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:25:13-54
+32            android:authorities="com.fachryar.moviecatalogue"
+32-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:26:13-62
+33            android:enabled="true"
+33-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:27:13-35
+34            android:exported="true" />
+34-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:28:13-36
+35
+36        <activity android:name="com.fachryar.moviecatalogue.view.NotificationSettingActivity" />
+36-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:30:9-70
+36-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:30:19-67
+37
+38        <receiver android:name="com.fachryar.moviecatalogue.widget.FavoriteWidget" >
+38-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:32:9-40:20
+38-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:32:19-56
+39            <intent-filter>
+39-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:33:13-35:29
+40                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+40-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:34:17-84
+40-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:34:25-81
+41            </intent-filter>
+42
+43            <meta-data
+43-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:37:13-39:64
+44                android:name="android.appwidget.provider"
+44-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:38:17-58
+45                android:resource="@xml/favorite_widget_info" />
+45-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:39:17-61
+46        </receiver>
+47        <receiver
+47-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:41:9-44:39
+48            android:name="com.fachryar.moviecatalogue.utils.AlarmReceiver"
+48-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:42:13-48
+49            android:enabled="true"
+49-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:43:13-35
+50            android:exported="true" />
+50-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:44:13-36
+51
+52        <activity android:name="com.fachryar.moviecatalogue.view.SearchActivity" />
+52-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:46:9-57
+52-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:46:19-54
+53        <activity android:name="com.fachryar.moviecatalogue.view.FavoriteActivity" />
+53-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:47:9-59
+53-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:47:19-56
+54        <activity
+54-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:48:9-50:58
+55            android:name="com.fachryar.moviecatalogue.view.DetailActivity"
+55-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:49:13-48
+56            android:theme="@style/AppThemeNoActionBar" />
+56-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:50:13-55
+57        <activity
+57-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:51:9-59:20
+58            android:name="com.fachryar.moviecatalogue.view.MainActivity"
+58-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:52:13-46
+59            android:launchMode="singleTask" >
+59-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:53:13-44
+60            <intent-filter>
+60-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:54:13-58:29
+61                <action android:name="android.intent.action.MAIN" />
+61-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:55:17-69
+61-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:55:25-66
+62
+63                <category android:name="android.intent.category.LAUNCHER" />
+63-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:57:17-77
+63-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:57:27-74
+64            </intent-filter>
+65        </activity>
+66
+67        <service
+67-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:61:9-63:72
+68            android:name="com.fachryar.moviecatalogue.widget.StackWidgetService"
+68-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:62:13-54
+69            android:permission="android.permission.BIND_REMOTEVIEWS" />
+69-->C:\Users\User\AndroidProject\Dicoding MADE\MovieCatalogue\app\src\main\AndroidManifest.xml:63:13-69
+70
+71        <provider
+71-->[com.squareup.picasso:picasso:2.71828] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9befb3b493fe8d5b3be50e157a7ff9eb\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+72            android:name="com.squareup.picasso.PicassoProvider"
+72-->[com.squareup.picasso:picasso:2.71828] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9befb3b493fe8d5b3be50e157a7ff9eb\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+73            android:authorities="com.fachryar.moviecatalogue.com.squareup.picasso"
+73-->[com.squareup.picasso:picasso:2.71828] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9befb3b493fe8d5b3be50e157a7ff9eb\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+74            android:exported="false" />
+74-->[com.squareup.picasso:picasso:2.71828] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9befb3b493fe8d5b3be50e157a7ff9eb\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+75
+76        <service
+76-->[androidx.room:room-runtime:2.2.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\b873f96d88daed9bf99c7d2d1d8697b5\room-runtime-2.2.2\AndroidManifest.xml:25:9-27:40
+77            android:name="androidx.room.MultiInstanceInvalidationService"
+77-->[androidx.room:room-runtime:2.2.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\b873f96d88daed9bf99c7d2d1d8697b5\room-runtime-2.2.2\AndroidManifest.xml:26:13-74
+78            android:exported="false" />
+78-->[androidx.room:room-runtime:2.2.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\b873f96d88daed9bf99c7d2d1d8697b5\room-runtime-2.2.2\AndroidManifest.xml:27:13-37
+79
+80        <provider
+80-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\754a89495065a07a9be04840b065b6a4\lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+81            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+81-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\754a89495065a07a9be04840b065b6a4\lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+82            android:authorities="com.fachryar.moviecatalogue.lifecycle-process"
+82-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\754a89495065a07a9be04840b065b6a4\lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+83            android:exported="false"
+83-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\754a89495065a07a9be04840b065b6a4\lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+84            android:multiprocess="true" />
+84-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\754a89495065a07a9be04840b065b6a4\lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+85    </application>
+86
+87</manifest>
